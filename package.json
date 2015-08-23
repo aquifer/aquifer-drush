@@ -1,0 +1,25 @@
+{
+  "name": "aquifer-drush",
+  "version": "1.0.0",
+  "description": "Drush wrapper for Aquifer.",
+  "main": "./bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aquifer/aquifer-drush.git"
+  },
+  "author": "Peter Sieg <chasingmaxwell@gmail.com> (http://petersieg.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aquifer/aquifer-drush/issues"
+  },
+  "homepage": "https://github.com/aquifer/aquifer-drush",
+  "dependencies": {
+    "drush-node": "file:../../../../tmp/npm-26336-97fe77b2/git-cache-bb1ddf0a6c5b/abd5ce7d4fa75d7d115edab20b32f9af945fa229",
+    "jsonfile": "^2.2.1",
+    "path": "^0.11.14",
+    "q": "^1.4.1"
+  }
+}

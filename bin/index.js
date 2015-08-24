@@ -24,7 +24,8 @@ module.exports = function(Aquifer, AquiferDrushConfig) {
   AquiferDrush.commands = function () {
     return {
       'drush': {
-        description: 'Runs drush commnds against the built Aquifer project.'
+        description: 'Runs drush commnds against the built Aquifer project.',
+        allowUnknownOption: true
       }
     };
   };

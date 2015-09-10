@@ -45,7 +45,7 @@ module.exports = function(Aquifer, AquiferDrushConfig) {
 
     var jsonPath      = path.join(Aquifer.projectDir, 'aquifer.json'),
         json          = jsonFile.readFileSync(jsonPath),
-        dir           = path.join(Aquifer.projectDir, json.paths.builds, 'work'),
+        dir           = path.join(Aquifer.projectDir, json.paths.build),
         drushCommand  = process.argv.slice(3).join(' ');
 
     Q.when(drush.init({log: true, cwd: dir}))

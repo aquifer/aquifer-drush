@@ -18,8 +18,6 @@
   "homepage": "https://github.com/aquifer/aquifer-drush",
   "dependencies": {
     "drush-node": "chasingmaxwell/drush-node",
-    "jsonfile": "^2.2.1",
-    "path": "^0.11.14",
     "q": "^1.4.1"
   }
 }

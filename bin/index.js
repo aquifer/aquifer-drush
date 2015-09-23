@@ -12,7 +12,6 @@ module.exports = function(Aquifer, AquiferDrushConfig) {
   var AquiferDrush  = function() {},
       drush         = require('drush-node'),
       path          = require('path'),
-      jsonFile      = require('jsonfile'),
       Q             = require('q');
 
   /**
@@ -43,12 +42,9 @@ module.exports = function(Aquifer, AquiferDrushConfig) {
       return;
     }
 
-    var jsonPath      = path.join(Aquifer.projectDir, 'aquifer.json'),
-        json          = jsonFile.readFileSync(jsonPath),
-        dir           = path.join(Aquifer.projectDir, json.paths.build),
-        drushCommand  = process.argv.slice(3).join(' ');
+    var drushCommand  = process.argv.slice(3).join(' ');
 
-    Q.when(drush.init({log: true, cwd: dir}))
+    Q.when(drush.init({log: true, cwd: Aquifer.project.config.paths.build}))
       .then(function () {
         Aquifer.console.log('Executing drush command...', 'status');
         return drush.exec(drushCommand);

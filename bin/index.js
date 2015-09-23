@@ -11,7 +11,6 @@ module.exports = function(Aquifer, AquiferDrushConfig) {
 
   var AquiferDrush  = function() {},
       drush         = require('drush-node'),
-      path          = require('path'),
       Q             = require('q');
 
   /**

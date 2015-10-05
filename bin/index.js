@@ -16,8 +16,7 @@ module.exports = function(Aquifer, AquiferDrushConfig) {
   /**
    * Informs Aquifer of what this extension does.
    *
-   * @return object
-   * Details about this deployment script.
+   * @returns {object} Details about this deployment script.
    */
   AquiferDrush.commands = function () {
     return {
@@ -31,9 +30,11 @@ module.exports = function(Aquifer, AquiferDrushConfig) {
   /**
    * Run when user runs commands within this extension.
    *
-   * @param string command string representing the name of the command defined in AquiferDrush.commands that should run.
-   * @param object options options passed from the command.
-   * @param function callback function that is called when there is an error message to send.
+   * @param {string} command - Command string representing the name of the command defined in AquiferDrush.commands that should run.
+   * @param {object} options - Options options passed from the command.
+   * @param {function} callback - Callback function that is called when there is an error message to send.
+   *
+   * @returns {undefined} null.
    */
   AquiferDrush.run = function (command, options, callback) {
     if (command !== 'drush') {

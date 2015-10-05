@@ -1,6 +1,6 @@
 {
   "name": "aquifer-drush",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Drush wrapper for Aquifer.",
   "main": "./bin/index.js",
   "scripts": {
@@ -19,5 +19,12 @@
   "dependencies": {
     "drush-node": "chasingmaxwell/drush-node",
     "q": "^1.4.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-bump": "^1.0.0",
+    "gulp-eslint": "^1.0.0",
+    "gulp-help": "^1.6.1",
+    "gulp-jscs": "^3.0.1"
   }
 }
